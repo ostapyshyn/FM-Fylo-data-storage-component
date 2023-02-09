@@ -57,6 +57,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #0c122c;
+  background-image: url(./assets/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100% 50%;
 }
 
 code {
