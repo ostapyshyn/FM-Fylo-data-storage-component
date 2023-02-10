@@ -1,0 +1,72 @@
+.storage {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #dbd9ff;
+  padding: 40px;
+  background: #1e2d69;
+  box-shadow: 0px 75px 100px -30px rgba(0, 0, 0, 0.24776);
+  border-radius: 10px;
+
+  max-width: 540px;
+  width: 100%;
+  p {
+    margin-bottom: 16px;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .bar {
+    background: rgb(12, 18, 44, 0.5);
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 8px;
+    padding: 3px;
+    .space {
+      position: relative;
+      border-radius: 8px;
+      width: 100%;
+      width: 339px;
+      height: 14px;
+      background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+
+      animation: progressBar 1s ease both;
+      animation-fill-mode: both;
+      -webkit-animation: progressBar 1s ease both;
+      -moz-animation: progressBar 1s ease both;
+      .dot {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border-radius: 50%;
+        top: 2px;
+        right: 2px;
+      }
+    }
+  }
+  .range {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #dbd9ff;
+  }
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}

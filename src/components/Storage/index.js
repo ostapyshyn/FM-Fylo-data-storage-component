@@ -1,2 +1,2 @@
-import Button from './Button';
-export default Button;
+import Storage from './Button'
+export default Storage
