@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .storage {
   position: relative;
   font-family: 'Raleway';
@@ -13,6 +15,9 @@
 
   max-width: 540px;
   width: 100%;
+  @include mq(768px) {
+    max-width: 350px;
+  }
 
   .alert {
     position: absolute;
@@ -34,6 +39,13 @@
     justify-content: center;
     align-items: center;
     gap: 9px;
+    @include mq(768px) {
+      border-radius: 10px 10px 10px 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+      top: 120px;
+    }
 
     .number {
       animation: counter 3s alternate ease-in-out;
@@ -56,6 +68,9 @@
       border-right: 0;
       margin-left: 0;
       margin-bottom: -25px;
+      @include mq(768px) {
+        display: none;
+      }
     }
 
     .gb {
