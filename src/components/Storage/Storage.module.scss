@@ -35,6 +35,14 @@
     align-items: center;
     gap: 9px;
 
+    .number {
+      animation: counter 3s alternate ease-in-out;
+      counter-reset: num var(--num);
+      &:after {
+        content: counter(num);
+      }
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -131,12 +139,12 @@
     --num: 1;
   }
   to {
-    --num: 184;
+    --num: 185;
   }
 }
 
 @property --num {
   syntax: '<integer>';
-  initial-value: 184;
+  initial-value: 185;
   inherits: false;
 }

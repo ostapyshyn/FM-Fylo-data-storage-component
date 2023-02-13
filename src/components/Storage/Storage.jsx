@@ -17,7 +17,7 @@ export default function Storage({ main, isPro }) {
         <span>1000 GB</span>
       </div>
       <div className={styles.alert}>
-        <p>185</p>
+        <p className={styles.number}></p>
         <span className={styles.gb}>GB LEFT</span>
       </div>
     </section>
