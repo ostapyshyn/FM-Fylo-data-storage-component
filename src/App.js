@@ -5,8 +5,10 @@ import Storage from './components/Storage/Storage'
 function App() {
   return (
     <div className="App">
-      <About />
-      <Storage />
+      <main>
+        <About />
+        <Storage />
+      </main>
     </div>
   )
 }

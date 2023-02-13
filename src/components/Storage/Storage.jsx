@@ -4,7 +4,7 @@ import styles from './Storage.module.scss'
 export default function Storage({ main, isPro }) {
   return (
     <section className={styles.storage}>
-      <p>
+      <p className={styles.used}>
         You’ve used <span>815 GB</span> of your storage
       </p>
       <div className={styles.bar}>
@@ -15,6 +15,10 @@ export default function Storage({ main, isPro }) {
       <div className={styles.range}>
         <span>0 GB</span>
         <span>1000 GB</span>
+      </div>
+      <div className={styles.alert}>
+        <p>185</p>
+        <span className={styles.gb}>GB LEFT</span>
       </div>
     </section>
   )

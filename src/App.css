@@ -11,3 +11,12 @@
   border: 1px solid mediumblue; */
   margin: auto;
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  align-items: end;
+}
