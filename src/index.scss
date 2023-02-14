@@ -62,6 +62,10 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: 100% 50%;
+  @include mq(768px) {
+    background-image: url(./assets/bg-mobile.png);
+    background-size: 100% 100%;
+  }
 }
 
 code {

@@ -17,6 +17,9 @@
   width: 100%;
   @include mq(768px) {
     max-width: 350px;
+    padding-inline: 32px;
+    padding-top: 32px;
+    padding-bottom: 52px;
   }
 
   .alert {
@@ -83,7 +86,7 @@
 
       text-align: right;
       letter-spacing: 1px;
-
+      white-space: nowrap;
       color: #0c122c;
 
       mix-blend-mode: normal;
